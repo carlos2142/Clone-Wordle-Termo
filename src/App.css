@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+
+.App {
+
+  text-align: center;
+  background-color: #CFBBB3;
+  width: 100vw;
+  height: 100vh;
+
+  /* display: flex; */
+  color: white;
+  overflow: hidden;
+
+}
+
+.key {
+
+  text-align: center;
+  background-color: #121212;
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
+  color: #CFBBB3;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+body {
+  padding: 0%;
+  margin: 0;
+  width: 50vw;
+  height: 100vh;
+}
+
+nav {
+  height: 3.75rem;
+  width: 100%;
+  margin: 0;
+
+  display: grid;
+  place-items: center;
+}
+
+nav h1 {
+
+  margin: 0.75rem;
+  font-family: 'Secular One', sans-serif;
+  color: #e6dcd4;
+  text-shadow: -2px 4px #9b5b5e;
+  font-size: 2.625rem;
+  
+}
+
+h1:hover {
+  text-shadow: -3px 5px #8a5154;
+  
+}
+
+.game {
+
+  width: 100vw;
+  height: calc(100vh - 7.563rem);
+  display: flex;
+  align-items: center;
+  padding-top: 3.125rem;
+  flex-direction: column;
+}
+
+.board {
+
+  width: 28.75rem;
+  height: 34.688rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 0.25rem;
+}
+
+.box {
+  flex: 42%;
+  height: 80%;
+  border: 0.121rem solid #4d1f1f;
+  border-radius: 2%;
+  box-shadow: -3px 3px 0px #604f4f;
+  margin: 8px;
+  display: grid;
+  place-items: center;
+  font-size: px;
+  font-weight: bolder;
+  color: #9b5b5e;
+  font-family: 'Secular One', sans-serif;
+
+
+}
+
+
+.letter {
+  flex: 42%;
+  height: 80%;
+  border: 0.121em solid #f2e3e3;
+  border-radius: 2%;
+  box-shadow: -3px 3px 0px #604f4f;
+  margin: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 38px;
+  font-weight: bolder;
+  color: #f5ede7;
+  text-shadow: -1.21px 3.21px 0px #9b5b5e;
+  font-family: 'Secular One', sans-serif;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+
+}
+
+.letter:hover {
+  color: #faece2;
+  text-shadow: -2.42px 3.42px 0px #773b3e;
+  box-shadow: -3.21px 4.42px 0px #544545;
+
+}
+
+
+
+
+
+
+#correct {
+  background-color: #739a70;
+}
+
+#almost {
+  background-color: #c8b868;
+}
+
+#error {
+  background-color: #4e4440;
+}
+
+.keyboard {
+
+  width: 45.063rem;
+  height: 13.813rem;
+  margin-top: 3.75rem;
+
+
+}
+
+
+
+
+.line1 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: -1px;
+}
+
+.line2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: -1px;
+}
+
+.line3 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: -1px;
+}
+
+.key {
+  font-family: 'Secular One', sans-serif;
+
+  width: 7.563rem;
+  height: 3.5rem;
+  margin: 0.313rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.875rem;
+  background-color: #9b5b5e;
+  color: #e6dcd4;
+  box-shadow: 0px 6px #3a393c;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all .1s ease-in-out;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.key:hover {
+  font-size: 2rem;
+  text-shadow: -2.42px 3.42px 0px #773b3e;
+  box-shadow: 0px 7px #252426;
+
+}
+
+#big {
+  width: 15.125rem;
+}
+
+#disabled {
+  color: #DECCC5;
+  background-color: #c6b6b0;
+  box-shadow: 0px 2px #bbaca6;
+}
+
+h4 {
+  margin: -1.75rem;
+
+}
+
+h3 {
+  margin: 1.313rem;
+
+}
+
+.gameOver {
+  margin: 2.625rem;
+
+  font-family: 'Secular One', sans-serif;
+
+
+
+  size: 0.625rem;
+
+  color: #faece2;
+  text-shadow: -1.42px 2.42px 0px #773b3e;
+  font-size: 1.313rem;
+
+}
+
+.Toastify__toast--warning {
+  background: #9b5b5e !important;
+  font-family: 'Secular One', sans-serif;
+}
+
+
+
+.toastBody {
+
+  font-family: 'Secular One', sans-serif;
+  color: #faece2;
+  /* #10171D */
+  font-size: 1rem !important;
+  text-shadow: -1.42px 2.42px 0px #773b3e;
+
+}
+
+
+
+@media only screen and (min-device-width: 100px) and (max-device-width: 399px) {
+
+  .Toastify__toast-container--top-center {
+    margin-left: - (100px / 2) !important;
+  }
+
+  .App {
+    overflow: hidden;
+  }
+
+  nav h1 {
+    margin: 1.8rem;
+    font-family: 'Secular One', sans-serif;
+    color: #e6dcd4;
+    text-shadow: -1.9px 2.6px #9b5b5e;
+    font-size: 1.8rem;
+  }
+
+  .nav {
+    height: 82px;
+    width: 75%;
+  }
+
+  .nav h1 {
+    margin: -79px;
+    text-shadow: -1px 2px #82151b;
+    font-size: 10px;
+  }
+
+  .key {
+    width: -15px;
+    height: 43px;
+    margin: -2px;
+    font-size: 19px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .key:hover {
+    font-size: 24px;
+    text-shadow: -2.42px 3.42px 0px #773b3e;
+    box-shadow: 0px 7px #252426;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+  }
+
+
+
+
+  .keyboard {
+    width: 348px;
+    height: 370px;
+    margin-top: 46px;
+    ;
+
+  }
+
+  .game {
+    width: 100vw;
+    height: 202vw;
+    padding-top: 27px;
+    ;
+  }
+
+  .board {
+    width: 385px;
+    height: 505px;
+  }
+
+  .row {
+    margin: 7px;
+
+  }
+
+  .letter {
+    font-size: 19px;
+    text-shadow: -1px 2px 0px #9b5b5e;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .box,
+  .letter {
+    height: 86%;
+    margin: 10px;
+  }
+
+  .gameOver {
+    margin: 43px;
+    font-size: 18px;
+    width: 40vh;
+  }
+
+  #big {
+    width: 21.1rem;
+  }
+
+  .gameOver {
+    text-shadow: -1.42px 2.42px 0px #773b3e;
+    text-shadow: -1px 1px 0px #773b3e;
+  }
+
+
+
+  h4 {
+
+    margin: 2.2rem;
+  }
+
+
+  h3 {
+
+
+    margin: -2.5rem;
+  }
+
+  .gameOver {
+    /* text-shadow: -1px 2px 0px #773b3e; */
+    font-size: 17px;
+    text-shadow: -1.5px 1.5px 0px #773b3e;
+  }
+
+  #disabled {
+    font-size: 19px;
+    color: #DECCC5;
+    background-color: #c6b6b0;
+    place-items: center;
+    box-shadow: 0px 6px #bbaca6;
+
+  }
+
+
+}
+
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 768px) {
+
+  .App {
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .nav {
+    height: 82px;
+    width: 75%;
+    overflow: hidden;
+  }
+
+  nav h1 {
+    margin: 2.9rem;
+    overflow: hidden;
+  }
+
+  .nav h1 {
+    margin: -79px;
+    text-shadow: -1px 2px #9b5b5e;
+    font-size: 30px;
+    overflow: hidden;
+  }
+
+  .key {
+    width: -15px;
+    height: 43px;
+    margin: -2px;
+    font-size: 20px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    overflow: hidden;
+  }
+
+  .key:hover {
+    font-size: 23px;
+    text-shadow: -2.42px 3.42px 0px #773b3e;
+    box-shadow: 0px 7px #252426;
+    overflow: hidden;
+
+  }
+
+
+
+
+  .keyboard {
+    width: 396px;
+    height: 256px;
+    margin-top: 114px;
+    overflow: hidden;
+  }
+
+  .game {
+    width: 100vw;
+    height: 265vw;
+    padding-top: 5rem;
+    overflow: hidden;
+  }
+
+  .board {
+    width: 426px;
+    height: 471px;
+    overflow: hidden;
+  }
+
+  .row {
+    margin: 7px;
+
+  }
+
+  .letter {
+    font-size: 23px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .box,
+  .letter {
+    height: 86%;
+    margin: 10px;
+  }
+
+  .gameOver {
+    margin: 43px;
+    font-size: 18px;
+    width: 40vh;
+    overflow: hidden;
+  }
+
+  #big {
+    width: 21.1rem;
+    overflow: hidden;
+  }
+
+  #disabled {
+    font-size: 20px;
+    color: #DECCC5;
+    background-color: #c6b6b0;
+
+    box-shadow: 0px 6px #bbaca6;
+
+  }
+
+  .key {
+    height: 53px;
+    margin: -1px;
+    font-size: 21px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    overflow: hidden;
+  }
+}
+
+
+@media (min-device-height: 850px) {
+  .App {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+}
