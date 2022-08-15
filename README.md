@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Preview
+<p align="center">
+  <img alt="Jogo Vocabulo - OriginSix" src=".github/preview.png" width="100%">
+</p>
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
