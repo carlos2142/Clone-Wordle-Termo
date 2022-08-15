@@ -1,6 +1,6 @@
 # Preview
 <p align="center">
-  <img alt="Jogo Vocabulo - OriginSix" src=".github/preview.png" width="100%">
+  <img alt="Jogo Vocabulo" src=".github/preview.png" width="100%">
 </p>
 ## Getting Started with Create React App
 
